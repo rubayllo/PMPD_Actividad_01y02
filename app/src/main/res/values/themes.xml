@@ -5,5 +5,11 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="MyCustomTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- Actualizados el archivo color para quitar el hexadecimal -->
+        <item name="android:colorBackground">@color/yellow</item>
+    </style>
+
     <style name="Theme.Actividad2RubenAyllon" parent="Base.Theme.Actividad2RubenAyllon" />
 </resources>

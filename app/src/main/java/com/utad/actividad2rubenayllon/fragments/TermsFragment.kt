@@ -60,12 +60,12 @@ class TermsFragment : Fragment() {
             Snackbar.make(binding.root, "Confirmas", Snackbar.LENGTH_SHORT).show()
 
             binding.btnTermsAceptar.setBackgroundColor(Color.parseColor("#3070A3"))
-            binding.btnTermsAceptar.isClickable = true
+            binding.btnTermsAceptar.isEnabled = true
         } else {
             Snackbar.make(binding.root, "No confirmas", Snackbar.LENGTH_SHORT).show()
 
             binding.btnTermsAceptar.setBackgroundColor(Color.parseColor("#B9BBBC"))
-            binding.btnTermsAceptar.isClickable = false
+            binding.btnTermsAceptar.isEnabled = false
         }
     }
 }

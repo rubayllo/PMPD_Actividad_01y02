@@ -32,8 +32,6 @@ class WellcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        buttonEnabled()
-
         binding.etName.doAfterTextChanged { buttonEnabled() }
 
         binding.cbWellcomeMostrarTodas.setOnClickListener() {
@@ -58,12 +56,12 @@ class WellcomeFragment : Fragment() {
         }
 
         binding.btnWellcomeContinue.setOnClickListener() {
-            verificarNombre()
+            goToTerms()
         }
 
     }
 
-    private fun verificarNombre() {
+    private fun goToTerms() {
         val nameIsBlank = binding.etName.text.isBlank()
         val bundle = Bundle()
 
@@ -93,10 +91,10 @@ class WellcomeFragment : Fragment() {
 
         if (todas || deportes || tecnologia) {
             binding.btnWellcomeContinue.setBackgroundColor(Color.parseColor("#3070A3"))
-            binding.btnWellcomeContinue.isClickable = true
+            binding.btnWellcomeContinue.isEnabled = true
         } else {
             binding.btnWellcomeContinue.setBackgroundColor(Color.parseColor("#B9BBBC"))
-            binding.btnWellcomeContinue.isClickable = false
+            binding.btnWellcomeContinue.isEnabled = false
         }
     }
 }
