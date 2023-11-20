@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Actividad 2 Ruben Ayllon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="bienvenido">¡Bienvenido!\nVamos a ponernos al día.</string>
+    <string name="name">Nombre</string>
+    <string name="categories">¿Qué categoría de noticias te interesa más?</string>
+    <string name="button_wellcome_continue">Continuar</string>
+    <string name="mostrar_todas">Muéstrame todas</string>
+    <string name="sports">Deportes</string>
+
+    <string name="terminos">, puede que encuentres información sensible. Necesitamos que nos confirmes que eres mayor de edad.</string>
+    <string name="switch_terminos">¿Eres mayor de edad?</string>
+    <string name="terminos_aceptar">Llévame al fed</string>
+    <string name="home">Principal</string>
+    <string name="technology">Tecnología</string>
+    <string name="extended_news">Muéstrame más</string>
+    <string name="tittle">Título</string>
+    <string name="author">Autor</string>
+    <string name="article">Artículo</string>
+    <string name="imagen_news">Imagen de la notícia</string>
+</resources>

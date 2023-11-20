@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.WellcomeFragment" >
+
+    <TextView
+        android:id="@+id/tv_wellcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/bienvenido"
+        android:text="@string/bienvenido"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_wellcome"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/pic_wellcome"
+        app:layout_constraintEnd_toEndOf="@+id/tv_wellcome"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/tv_wellcome"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wellcome" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_wellcome"
+        app:layout_constraintStart_toStartOf="@+id/tv_wellcome"
+        app:layout_constraintTop_toBottomOf="@+id/iv_wellcome" />
+
+    <TextView
+        android:id="@+id/tv_categorias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/categories"
+        android:text="@string/categories"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="@+id/et_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <CheckBox
+        android:id="@+id/cb_wellcome_mostrar_todas"
+        style="@style/customCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mostrar_todas"
+        app:layout_constraintEnd_toEndOf="@+id/tv_categorias"
+        app:layout_constraintStart_toStartOf="@+id/tv_categorias"
+        app:layout_constraintTop_toBottomOf="@+id/tv_categorias" />
+
+    <CheckBox
+        android:id="@+id/cb_wellcome_deportes"
+        style="@style/customCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sports"
+        app:layout_constraintEnd_toEndOf="@+id/tv_categorias"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_categorias"
+        app:layout_constraintTop_toBottomOf="@+id/cb_wellcome_mostrar_todas" />
+
+    <CheckBox
+        android:id="@+id/cb_wellcome_tecnología"
+        style="@style/customCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/technology"
+        app:layout_constraintEnd_toEndOf="@+id/tv_categorias"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_categorias"
+        app:layout_constraintTop_toBottomOf="@+id/cb_wellcome_deportes" />
+
+    <Button
+        android:id="@+id/btn_wellcome_continue"
+        style="@style/customButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:clickable="false"
+        android:text="@string/button_wellcome_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_wellcome_tecnología" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

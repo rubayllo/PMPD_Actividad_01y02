@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_news"
+    app:startDestination="@id/allNewsFragment">
+
+    <fragment
+        android:id="@+id/allNewsFragment"
+        android:name="com.utad.actividad2rubenayllon.fragments.AllNewsFragment"
+        android:label="fragment_all_news"
+        tools:layout="@layout/fragment_all_news" />
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.utad.actividad2rubenayllon.fragments.SportsFragment"
+        android:label="fragment_sports"
+        tools:layout="@layout/fragment_sports" />
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.utad.actividad2rubenayllon.fragments.TechnologyFragment"
+        android:label="fragment_technology"
+        tools:layout="@layout/fragment_technology" />
+</navigation>
